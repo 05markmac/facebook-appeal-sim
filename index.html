@@ -1,93 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Facebook Login Alert</title>
+  <title>Facebook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: Helvetica, Arial, sans-serif;
       background-color: #f0f2f5;
-      padding: 30px;
       margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
-    .email-box {
-      max-width: 600px;
-      margin: auto;
+
+    .container {
       background-color: #fff;
-      padding: 30px;
-      border-radius: 6px;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-      color: #1c1e21;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      padding: 30px 20px;
+      text-align: center;
+      max-width: 380px;
+      width: 100%;
     }
+
+    .fb-logo {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
     h2 {
       color: #1877f2;
       margin-bottom: 10px;
     }
-    .section {
-      margin-top: 20px;
-    }
-    .info-box {
-      background-color: #f5f6f7;
-      padding: 15px;
-      border-radius: 5px;
+
+    p {
       font-size: 15px;
-      margin-bottom: 20px;
+      color: #333;
+      margin-bottom: 25px;
     }
-    .button {
-      display: inline-block;
+
+    .like-btn {
       background-color: #1877f2;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 15px;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
     }
-    .footer {
-      margin-top: 40px;
-      font-size: 12px;
-      color: #555;
+
+    .like-btn:hover {
+      background-color: #145dbf;
     }
-    .footer a {
-      color: #1877f2;
-      text-decoration: none;
+
+    .page-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 2px solid #ddd;
     }
   </style>
 </head>
 <body>
-  <div class="email-box">
-    <h2>🔒 Security alert: login near Bacoor on a new device</h2>
-
-    <p>Hi Mark Anthony,</p>
-
-    <p>Someone just logged into your Facebook account near <strong>Bacoor, Philippines</strong> on <strong>Mobile Safari</strong> using <strong>Apple iPhone XS Max</strong>. If this wasn't you, we're here to help you take some simple steps to secure your account.</p>
-
-    <div class="section">
-      <strong>Was this you?</strong>
-      <div class="info-box">
-        📍 Bacoor, Philippines<br>
-        🌐 Mobile Safari on Apple iPhone XS Max<br>
-        📅 Wednesday, June 18, 2025 at 2:54 PM
-      </div>
-      <a href="login.html" class="button">This wasn't me</a>
-    </div>
-
-    <div class="section">
-      <p>If this was you, you can ignore this email.</p>
-
-      <p>Wondering if this email is really from us? Visit the Help Center to confirm: <a href="https://www.facebook.com/help/check-email">facebook.com/help/check-email</a></p>
-
-      <p>To improve your account security, we've enabled login alerts. We'll continue to notify you whenever your username and password are used to login from a new browser or device.</p>
-
-      <p>Thanks,<br>Facebook Security</p>
-    </div>
-
-    <div class="footer">
-      <p><strong>From:</strong> Meta</p>
-      <p>© Facebook. Meta Platforms, Inc., Attention: Community Support, 1 Meta Way, Menlo Park, CA 94025</p>
-      <p>This message was sent to markanthonypaten@gmail.com.</p>
-      <p>To help keep your account secure, please don't forward this email. <a href="#">Learn more</a></p>
-    </div>
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" class="fb-logo" alt="Facebook Logo">
+    <h2>Like Page to Continue</h2>
+    <img src="https://placekitten.com/200/200" class="page-img" alt="Page Logo">
+    <p>Please like this page to continue viewing the content.</p>
+    <button class="like-btn" onclick="redirect()">👍 Like Page</button>
   </div>
+
+  <script>
+    function redirect() {
+      alert("Redirecting to the Facebook page...");
+      window.location.href = "https://facebook.com";
+    }
+  </script>
 </body>
 </html>
