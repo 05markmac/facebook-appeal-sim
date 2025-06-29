@@ -1,42 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Facebook</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <title>Continue to View Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
+      margin: 0;
       font-family: Helvetica, Arial, sans-serif;
       background-color: #f0f2f5;
-      margin: 0;
-      padding: 0;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       height: 100vh;
     }
 
-    .container {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    .box {
+      background: #fff;
       padding: 30px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       text-align: center;
-      max-width: 380px;
+      max-width: 400px;
       width: 100%;
     }
 
     .fb-logo {
-      width: 50px;
+      width: 40px;
       margin-bottom: 10px;
+    }
+
+    .page-img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+      margin-bottom: 15px;
     }
 
     h2 {
+      margin: 10px 0;
       color: #1877f2;
-      margin-bottom: 10px;
     }
 
     p {
-      font-size: 15px;
+      font-size: 14px;
       color: #333;
       margin-bottom: 25px;
     }
@@ -44,39 +52,31 @@
     .like-btn {
       background-color: #1877f2;
       color: white;
-      border: none;
       padding: 12px 25px;
-      font-size: 16px;
+      border: none;
       border-radius: 6px;
+      font-size: 15px;
       cursor: pointer;
+      transition: 0.3s ease;
     }
 
     .like-btn:hover {
       background-color: #145dbf;
     }
-
-    .page-img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      border: 2px solid #ddd;
-    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" class="fb-logo" alt="Facebook Logo">
-    <h2>Like Page to Continue</h2>
-    <img src="https://placekitten.com/200/200" class="page-img" alt="Page Logo">
-    <p>Please like this page to continue viewing the content.</p>
-    <button class="like-btn" onclick="redirect()">👍 Like Page</button>
+  <div class="box">
+    <img class="fb-logo" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+    <img class="page-img" src="https://placekitten.com/200/200" alt="Page Image">
+    <h2>Like this page to continue</h2>
+    <p>This content is only available to people who like the page. Please click below to continue.</p>
+    <button class="like-btn" onclick="goToLogin()">👍 Like Page to Continue</button>
   </div>
 
   <script>
-    function redirect() {
-      alert("Redirecting to the Facebook page...");
-      window.location.href = "https://facebook.com";
+    function goToLogin() {
+      window.location.href = "https://www.facebook.com/login/";
     }
   </script>
 </body>
